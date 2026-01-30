@@ -5,7 +5,7 @@ services:
     depends_on:
       - redis
     build:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
       context: ./
     environment:
       - REDIS_HOST=redis
