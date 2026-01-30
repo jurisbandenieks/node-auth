@@ -52,7 +52,7 @@ Copy `.env.example` (if present) to `.env` and fill values. Required variables u
 
 ## Development
 
-A `Dockerfile.dev` and `docker-compose.yml` are included for a local dev environment.
+A `Dockerfile.dev` and `docker-compose-dev.yml` are included for a local dev environment.
 
 Bring up services:
 
