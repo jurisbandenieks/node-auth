@@ -3,8 +3,8 @@ import helmet from "helmet";
 import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 
-import { connectRedis } from "./config/redis.js";
-import { config } from "./config/index.js";
+import { connectRedis } from "./config/redis";
+import { config } from "./config/index";
 
 const app = express();
 app.use(helmet());

@@ -7,6 +7,10 @@ services:
     build:
       dockerfile: Dockerfile.dev
       context: ./
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - NODE_OPTIONS=--loader=ts-node/esm
     volumes:
       - /app/node_modules
       - ./:/app
