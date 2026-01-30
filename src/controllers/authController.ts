@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
+import jwt from "jsonwebtoken";
 import { UserModel } from "../types/user-model";
 import { createUser, getUserByUsername } from "../services/userService";
 import { hashPassword, verifyPassword } from "../utils/password";
-import jwt from "jsonwebtoken";
 import { config } from "../config";
 
 export async function register(req: Request, res: Response) {
