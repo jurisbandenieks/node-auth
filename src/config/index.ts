@@ -14,6 +14,7 @@ export const config = {
   redisPassword: REDIS_PASSWORD ?? "",
   appPepper: APP_PEPPER,
   nodeEnv: NODE_ENV,
+  jwtSecret: process.env.JWT_SECRET || "default_jwt_secret",
 };
 
 export type ConfigModel = typeof config;

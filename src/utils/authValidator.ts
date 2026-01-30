@@ -22,3 +22,8 @@ export const registerSchema = Joi.object({
         "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.",
     }),
 });
+
+export const loginSchema = Joi.object({
+  username: Joi.string().required(),
+  password: Joi.string().required(),
+});
