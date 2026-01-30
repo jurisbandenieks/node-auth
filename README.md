@@ -48,8 +48,6 @@ Copy `.env.example` (if present) to `.env` and fill values. Required variables u
 - `HASH_ALGO` — algorithm to use for hashing (e.g. `argon2`)
 - `NODE_ENV` — `development | production`
 
-> Tip: When running the services with Docker Compose, use `REDIS_URL=redis://redis:6379` so your app connects to the compose service named `redis` (not `localhost`).
-
 ---
 
 ## Development
