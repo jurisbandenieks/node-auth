@@ -3,6 +3,7 @@ import { Schema } from "joi";
 
 export function validatedBody(schema: Schema): RequestHandler {
   return (req: Request, res: Response, next: NextFunction) => {
+    // Validate request body against schema that gets passed in function params
     const { error } = schema.validate(req.body);
     if (error) {
       return res.status(400).json({ message: "Invalid request body", details: error.details });
