@@ -1,18 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "module": "es2020",
-    "moduleResolution": "node",
-    "lib": ["ES2020"],
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": false,
-    "noImplicitAny": false
+    "target": "es2022" /* Specify ECMAScript target version */,
+    "module": "NodeNext" /* Specify module code generation */,
+    "moduleResolution": "NodeNext" /* Specify module resolution strategy */,
+    "outDir": "./dist" /* Redirect output structure to the directory */,
+    "rootDir": "./src" /* Specify the root directory of input files */,
+    "esModuleInterop": true /* Enables interop between CommonJS and ES Modules */,
+    "forceConsistentCasingInFileNames": true /* Ensure casing is correct in imports */,
+    "strict": true /* Enable all strict type-checking options */,
+    "skipLibCheck": true /* Skip type checking of declaration files */,
+    "sourceMap": true /* Generates corresponding .map file */
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
