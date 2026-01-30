@@ -7,14 +7,18 @@ import { connectRedis } from "./config/redis";
 import { config } from "./config/index";
 
 const app = express();
+
+// Always bring protection with you
 app.use(helmet());
 
+// Log requests in development mode
 if (config.nodeEnv === "development") {
   app.use(morgan("tiny"));
 }
 
 app.use(express.json());
 
+// Limit route access to prevent attacks
 const authLimiter = rateLimit({
   windowMs: 60 * 1000, // 1 Minute
   max: 10,
