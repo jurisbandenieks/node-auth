@@ -1,5 +1,6 @@
 import Joi from "joi";
 
+// Used mostly AI advice, since I always forget regex patterns
 const usernameRegex = /^[a-zA-Z0-9_]{3,30}$/;
 const passwordSpecialCharacterRegex = /[!@#$%^&*(),.?":{}|<>]/;
 const passwordUppercaseRegex = /[A-Z]/;
