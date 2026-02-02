@@ -6,6 +6,7 @@ I also used AI assistance to generate regular expressions and to help validate m
 
 As next steps, I would:
 
+- Add unit testing
 - Add new routes to fetch data from a database
 - Implement JWT-based authentication via middleware, validating tokens issued from the /login endpoint
 - On the frontend, store the JWT in cookies and attach it to the Authorization header using an HTTP interceptor
@@ -59,5 +60,13 @@ Bring up services:
 ```bash
 docker-compose up --build
 ```
+
+---
+
+## Manual testing with Postman ✅
+
+- Set URL to `http://localhost:3000` and run `/api/register` → `/api/login` to get a token saved to the environment.
+- POST /auth/register — body: { username, password } → creates user (201)
+- POST /auth/login — body: { username, password } → returns token/session (200)
 
 ---
